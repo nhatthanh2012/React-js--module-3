@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>gallery</title>
+    <style>
+       
+        *{
+            padding: 0px;
+            margin: 0px;           
+        }      
+        .responsive .gallery{
+            display: inline-block;
+            margin-right: 0px;
+            width: 325px;
+            transition: all 2s;
+        }
+        .responsive .gallery:hover{
+            transform: scale(1.2);
+        } 
+        .responsive .gallery img {
+            height: auto;
+            width: 100%;
+        }
+        .description {
+            text-align: center;
+            color: rgb(100, 97, 97);
+        }
+        @media only screen and (max-width:1200px) {
+           .responsive .gallery{
+               width: 20%;
+               height: 120px;
+           }
+        }
+        @media only screen and (max-width:700px) {
+            .responsive .gallery {
+                width: 40%;
+            }  
+        }
+        @media only screen and (max-width:500px) {
+            .responsive .gallery {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="head">
+            <h1>Responsive Image Gallery</h1>
+            <h5>Resize the browser window to see the effect.</h5>
+            
+        </header>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg">
+                    <img src="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg"
+                        alt="" >
+                </a>
+                <p class="description">Add a description of the image here</p>
+            </div>
+            <div class="gallery">
+                <a href="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg">
+                    <img src="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg"
+                        alt="" >
+                </a>
+                <p>Add a description of the image here</p>
+            </div>
+            <div class="gallery">
+                <a href="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg">
+                    <img src="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg"
+                        alt="" >
+                </a>
+                <p class="description">Add a description of the image here</p>
+            </div>
+            <div class="gallery">
+                <a href="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg">
+                    <img src="https://thegioitranhviet.com/wp-content/uploads/2018/09/Tranh-Dan-Tuong-3D-Phong-Canh-117.jpg"
+                        alt="" >
+                </a>
+                <p class="description">Add a description of the image here</p>
+            </div>
+        </div>
+
+
+        <footer class="panel panel-default">
+            <div class="panel-heading text-left">
+                <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger
+                    than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show
+                    two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
